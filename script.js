@@ -1,6 +1,6 @@
 // Claude AI was used to assist in development of this file and as a learning tool:
-// fixing bugs in the fetch calls, the server wake-up call, the CORS failure
-// demonstration, and offering educational explanations of the project's concepts. All code was reviewed and tested by the student.
+// fixing bugs in the fetch calls and the CORS failure demonstration, and offering educational 
+// explanations of the project's concepts. All code was reviewed and tested by the student.
 
 
 const API_URL = 'https://dnd-dice-roller-node-cudscvewcvg6crcq.centralus-01.azurewebsites.net'
@@ -29,3 +29,9 @@ async function testCorsFailure() {
         output.textContent = 'CORS failure: the browser blocked the response.'
     }
 }
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter' && event.target.tagName !== 'BUTTON') {
+        roll()
+    }
+})
