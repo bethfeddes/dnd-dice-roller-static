@@ -1,4 +1,4 @@
-/* Claude AI was used to assist in bug fixing and guide in card styling. */
+/* Claude AI was used to assist in bug fixing and to guide in card styling. */
 
 /* Body / overall background styling */
 body {
@@ -35,11 +35,10 @@ hr {
     text-align: center;
     font-size: 1rem;
     margin: auto;
-    margin-bottom: 150px;
     width: 50%;
     border: 10px solid #ffd970;
     border-radius: 30px;
-    padding: 50px;
+    padding: 40px;
     background-color: #fff4d4;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
 }
@@ -66,6 +65,13 @@ button:active {
     background-color: #ff7575;
 }
 
+button.secondary {
+    font-size: 1rem;
+    padding: 5px 30px;
+    border: 2.5px solid #6e0000;
+    margin-top: 20px;
+}
+
 label {
     font-size: 1.25rem;
 }
@@ -77,16 +83,6 @@ input {
     width: 125px;
     text-align: right;
     margin-bottom: 30px;
-    border: 3px solid #3d0000;
-    border-radius: 10px;
-}
-
-/* Select */
-select {
-    font-size: 1.75rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100px;
-    text-align: center;
     border: 3px solid #3d0000;
     border-radius: 10px;
 }

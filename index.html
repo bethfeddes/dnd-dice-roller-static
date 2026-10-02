@@ -10,7 +10,7 @@
     <link rel='stylesheet' href='style.css'>
 </head>
 
-<body onload='rollDice()'>
+<body>
     <main class='card'>
         <div class='header'>
             <h1>D&amp;D Dice Roller</h1>
@@ -18,25 +18,10 @@
 
         <div class='instructions'>
             <p>
-            Pick a die type, then press <b>Roll Dice</b>- or just press Enter- to simulate a dice roll.
+            Press <b>Roll Dice</b>- or just press Enter- to simulate a roll of a 20-sided die.
             </p>
         </div>
         <hr>
-        <section class='controls'>
-            <h2>Choose Your Die</h2>
-            <div class='dropdown'>
-                <label for='dieType'>Die type:</label>
-                <select name='dice' id='dieType'>
-                    <option value='4'>d4</option>
-                    <option value='6'>d6</option>
-                    <option value='8'>d8</option>
-                    <option value='10'>d10</option>
-                    <option value='12'>d12</option>
-                    <option value='20'>d20</option>
-                    <option value='100'>d100</option>
-                </select>
-            </div>
-        </section>
 
         <section class='dice-result'>
             <h2>Result</h2>
@@ -44,9 +29,16 @@
             <input type='text' id='diceResult' class='die-value' readonly>
         </section>
 
-        <button id='rollButton' type='button' autofocus onclick='rollDice()'>
+        <button id='rollButton' type='button' autofocus onclick='roll()'>
             🌟⚔️ Roll Dice ⚔️🌟
         </button>
+        <hr>
+
+        <section class='cors-test'>
+            <button type='button' class='secondary' onclick='testCorsFailure()'>Test CORS Failure</button>
+            <p id='corsResult'></p>
+        </section>
+
 
     </main>
     
